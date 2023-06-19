@@ -10,6 +10,6 @@ p=30/214
 Q=1-P
 z=(p-P)/(sqrt((P*Q)/n))
 
-zalpha=qnorm(1-z)
+zalpha=qnorm(1-alpha)
 
-if (z>zalpha) print("Reject H0") else print("Alpha H0")
+if (z>zalpha) print("Reject H0") else print("Accept H0")

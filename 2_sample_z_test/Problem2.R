@@ -1,0 +1,19 @@
+n1=45+35
+n2=56+47
+x1=45
+x2=56
+p1=x1/n1
+p2=x2/n2
+P=(n1*p1+n2*p2)/(n1+n2)
+Q=1-P
+SE=sqrt((P*Q/n1)+(P*Q/n2))
+zcal=abs(p1-p2)/SE
+zcal
+alpha=0.01
+ztab=qnorm(1-(alpha/2))
+ztab
+if(zcal< ztab) {print("Accept H0")} else {print("Reject H0")}
+lowerlimit=(p1-p2)-ztab*SE
+upperlimit=(p1-p2)+ztab*SE
+CI_for_99percent=c(lowerlimit,upperlimit)
+CI_for_99percent

@@ -3,5 +3,5 @@ x1=c(30,40,20,50,60,40,20,60)
 x2=c(11,10,7,15,19,12,8,14)
 
 #get the parameters for multiple linear regression model
-model=lm(Y~x1+x2)
+model=lm(y~x1+x2)
 model
